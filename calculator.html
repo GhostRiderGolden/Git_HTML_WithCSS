@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>This is the title of the webpage!</title>
+    <link rel="stylesheet" href="CSS/CSSLimit.css" type="text/css">
+</head>
+<body>
+<script >
+    function calculate() {
+        //alert('sssss');
+        //var values= document.getElementById("box1").value;
+        var sVal= document.getElementById("sCal").value;
+        //var rr = values.split(",");
+        if(sVal =='add')
+            document.getElementById("result").value = "add";
+        else
+            document.getElementById("result").value = "nultiply";
+
+    }
+</script>
+<p class="header1" >This is a new calculator.</p>
+<select name="sCal" id="sCal">
+    <option value="add">add</option>
+    <option value="multiply">multiply</option>
+</select>
+
+<input type = "text" name = "box1" id="box1" />
+<input type = "text" name = "result" id="result"/>
+<button type = "button" name = "submit" value ="submit" onclick="calculate()">Submit</button>
+<button type = "button" name = "submit" value ="submit" onclick="window.location.href='index.html'">cancel</button>
+</body>
+</html>
